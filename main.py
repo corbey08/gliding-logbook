@@ -200,7 +200,7 @@ class GliderLogbook:
         ttk.Label(parent, text="Launch Method:").grid(row=2, column=2, sticky=tk.W, pady=2)
         self.launch_method_var = tk.StringVar()
         launch_combo = ttk.Combobox(parent, textvariable=self.launch_method_var, width=12)
-        launch_combo['values'] = ('Winch', 'Aerotow', 'Auto-tow', 'Bungee', 'Motor glider')
+        launch_combo['values'] = ('Winch', 'Aerotow', 'Auto-tow', 'Bungee', 'Motor glider', 'Self Launch')
         launch_combo.grid(row=2, column=3, sticky=(tk.W, tk.E), padx=(5, 0), pady=2)
         
         # Row 3
@@ -615,4 +615,5 @@ def main():
     root.mainloop()
 
 if __name__ == "__main__":
+
     main()
